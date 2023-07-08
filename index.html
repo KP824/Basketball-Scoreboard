@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="home-team">HOME</h3>
+                <div class="home-score">0</div>
+                <div class="btns-points">
+                    <!--Had to remove the "onclick" attributes, only for home/guest point btns, since we have to add additonal conditionals per click-->
+                    <button id="home-one-point">+1</button>
+                    <button id="home-two-point">+2</button>
+                    <button id="home-three-point">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3 class="guest-team">GUEST</h3>
+                <div class="guest-score">0</div>
+                <div class="btns-points">
+                    <button id="guest-one-point">+1</button>
+                    <button id="guest-two-point">+2</button>
+                    <button id="guest-three-point">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="resets">
+            <button class="home-reset" onclick="resetHome()">Reset Home Score</button>
+            <button class="new-game" onclick="newGame()">New Game</button>
+            <button class="guest-reset" onclick="resetGuest()">Reset Guest Score</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

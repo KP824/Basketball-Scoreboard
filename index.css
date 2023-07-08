@@ -1,0 +1,174 @@
+/*
+@font-face {
+    font-family: "Cursed Timer ULil";
+    src: url("https://www.fontspace.com/cursed-timer-ulil-font-f29411");
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+
+body {
+    margin: 0;
+    background-color: #1b244a;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Had to duplicate .home/guest-team class to allow the highlighting of score leader */
+.home-team {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: background-color 1s;
+    background-color:  #1b244a;;
+}
+
+.guest-team {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: background-color 1s;
+    background-color: #1b244a;
+}
+
+.home-score {
+    width: 155px;
+    height: 120;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: F94F6D;
+    align-items: center;
+    font-size: 100px;
+    /*
+    font-family: "Cursed Timer ULil";
+    */
+}
+
+.guest-score {
+    width: 155px;
+    height: 120;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: F94F6D;
+    align-items: center;
+    font-size: 100px;
+    font-family: "Cursed Timer ULil";
+}
+
+.btns-points {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+#home-one-point {
+    border: solid 3px #9AABD8;
+    width: 45px;
+    height: 45px;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+}
+
+#home-two-point {
+    border: solid 3px #9AABD8;
+    width: 45px;
+    height: 45px;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+}
+
+#home-three-point {
+    border: solid 3px #9AABD8;
+    width: 45px;
+    height: 45px;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+}
+
+#guest-one-point {
+    border: solid 3px #9AABD8;
+    width: 45px;
+    height: 45px;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+}
+
+#guest-two-point {
+    border: solid 3px #9AABD8;
+    width: 45px;
+    height: 45px;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+}
+
+#guest-three-point {
+    border: solid 3px #9AABD8;
+    width: 45px;
+    height: 45px;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+}
+
+.resets {
+    display: flex;
+    justify-content: center;
+}
+
+
+.home-reset {
+    border: solid 3px #9AABD8;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.guest-reset {
+    border: solid 3px #9AABD8;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+    margin-left:15px;
+    padding: 10px;
+}
+
+.new-game {
+    border: solid 3px #9AABD8;
+    background-color: #1b244a;
+    color:  #9AABD8;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+
+/* Rules for the highlighting of leader in score. Must append/remove "active" to respective classes */
+.home-team.active {
+    color: royalblue;
+    background-color: gold;
+    transition: background-color 1s;
+}
+
+.guest-team.active {
+    color: royalblue;
+    background-color: gold;
+    transition: background-color 1s;
+}
